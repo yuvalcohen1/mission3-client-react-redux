@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import meetingsReducer from "../features/meetings/meetingsSlice";
+import teamsReducer from "../features/teams/teamsSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    teams: teamsReducer,
+    meetings: meetingsReducer,
   },
 });
